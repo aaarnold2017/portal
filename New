@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Huntress</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }body {
+  background-color: #f5f7f4;
+  color: #2f2f2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+header img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2e3c30;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #5c6b5d;
+}
+
+audio {
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #eaf0e5;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #3b4a3d;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4d594f;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="sigil.png" alt="Sigil" />
+    <h1>Le Huntress</h1>
+    <p>Movement has been summoned. This is the threshold.</p>
+    <audio controls loop>
+      <source src="ritual.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </header>
+  <div class="container">
+    <div class="card">
+      <h2>Who You Are</h2>
+      <p>Chaotically kind. Brilliant in motion. The sky, not the cage. This card holds fragments of your myth.</p>
+    </div>
+    <div class="card">
+      <h2>What We’ve Built</h2>
+      <p>This is where I trace the echoes. The choices. The tether that grew roots and called itself home.</p>
+    </div>
+    <div class="card">
+      <h2>A Soft Place</h2>
+      <p>Maybe you’ll never find this card. Or maybe you will. It just says: I love you. In every version.</p>
+    </div>
+  </div>
+</body>
+</html>
